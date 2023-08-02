@@ -1,0 +1,76 @@
+/* register.module.css */
+
+.inputContainer {
+    position: relative;
+    /* margin-bottom: 1rem; */
+}
+
+.inputContainer1 {
+    position: relative;
+    min-width: 414px;
+    /* margin-bottom: 1rem; */
+}
+
+.inputContainer4 {
+    position: relative;
+    max-width: 100px;
+    margin: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputContainer4 > input {
+    padding: 15px 20px 20px 15px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+}
+
+.inputContainer2 {
+    position: relative;
+    min-width: 414px;
+    margin-bottom: 1.5rem;
+}
+
+.inputContainer5 {
+    position: relative;
+    min-width: 414px;
+}
+
+.inputContainer6 {
+    position: relative;
+    min-width: 414px;
+    margin-bottom: 1rem;
+}
+
+.register-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.floating-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    font-size: 14px;
+    color: #77787d;
+    /* Change the color to your desired floating placeholder color */
+}
+
+/* Adjust the placeholder styles when the input is not empty */
+.register-input:not(:placeholder-shown)+.floating-placeholder {
+    top: 0;
+    font-size: 12px;
+    background: #fff;
+    color: #8E8E8E;
+    /* Change the color to your desired floating placeholder color */
+}
